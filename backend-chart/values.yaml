@@ -1,0 +1,14 @@
+replicaCount: 1
+image:
+  repository: <url of the docker registry path where containing our docker images >
+  pullPolicy: IfNotPresent
+backend:
+  name: backend
+  image:
+    repository: <url of the docker image  where containing the backend image>
+    tag: latest
+    pullPolicy: IfNotPresent
+  service:
+    type: ClusterIP
+    port: 8080
+

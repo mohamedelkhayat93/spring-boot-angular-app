@@ -88,3 +88,6 @@ Redis can enhance the performance of AWS RDS. It will be used as a cache for fre
 
 We will use horizontal pod autoscaler (HPA) object to avoid slow data retrieval for application. This feature automatically scales up or down the number of pods based on specified metric (CPU,memory,etc ….). By using HPA  you can ensure that your application has the right amount of resources to handle the load.
 
+
+
+

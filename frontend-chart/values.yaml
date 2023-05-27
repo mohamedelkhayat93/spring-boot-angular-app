@@ -1,0 +1,13 @@
+replicaCount: 1
+image:
+  repository: <url of the docker registry path where containing our docker images >
+  pullPolicy: IfNotPresent
+frontend:
+  name: frontend
+  image:
+    repository: <url of the docker image  where containing the frontend image>
+    tag: latest
+    pullPolicy: IfNotPresent
+  service:
+    type: LoadBalancer
+    port: 8080
